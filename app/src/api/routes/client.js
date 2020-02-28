@@ -30,7 +30,7 @@ router.get('/',middleware.verifyJWT, controller.findAll);
  *          name:
  *              type: "string"
  *
- * /:
+ * /client:
  *   post:
  *     tags:
  *     - "Clients"
