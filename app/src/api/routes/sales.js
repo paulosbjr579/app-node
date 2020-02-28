@@ -214,7 +214,23 @@ router.get('/findIdSales/:id', controller.findIdSales);
  */
 router.get('/findItenIdSales/:id', controller.findItenIdSales);
 
-
+/**
+ * @swagger
+ * /sales:
+ *   delete:
+ *     tags:
+ *     - "Sales"
+ *     summary: "Delete all Sales"
+ *     description: "This can only be done by the logged in Sales."
+ *     operationId: "deleteSales"
+ *     produces:
+ *     - "application/json"
+ *     responses:
+ *       400:
+ *         description: "Invalid sales supplied"
+ *       404:
+ *         description: "Sales not found"
+ */
 router.delete('/', controller.deleteAll);
 
 module.exports = router;
