@@ -5,8 +5,7 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const app = express();
-const redis = require("redis");
-const redisClient = require('./config/redis').client;
+require("./config/db").migrate()
 
 const swaggerJsDoc = require("swagger-jsdoc");
 const swaggerUi = require("swagger-ui-express");
