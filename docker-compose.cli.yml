@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  node-cli:
+    container_name: node-cli
+    image: docker/node-cli
+    build:
+      context: .
+      dockerfile: docker/js/Dockerfile
+    environment: 
+      DATABASE_HOST: mysql-db-node     
+    volumes:
+     - ./app/src/api:/app
+    entrypoint: knex

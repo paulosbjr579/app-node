@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23cfd7c9-ae40-4b44-a8cd-1e3bd6241dc9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app/src/api/routes" />
+  </component>
+  <component name="ProjectId" id="1Y7F5yW18ufLmZfXbakJhYPXpTl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager" selected="Node.js.redis.js">
+    <configuration name="redis.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app/src/api/config/redis.js" working-dir="$PROJECT_DIR$/app/src/api/config">
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.node-api: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="node-api" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.redis.js" />
+        <item itemvalue="Docker.docker-compose.yml.node-api: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23cfd7c9-ae40-4b44-a8cd-1e3bd6241dc9" name="Default Changelist" comment="" />
+      <created>1582285546666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582285546666</updated>
+      <workItem from="1582285548377" duration="610000" />
+      <workItem from="1582291971425" duration="599000" />
+      <workItem from="1582301380472" duration="603000" />
+      <workItem from="1582510400970" duration="599000" />
+      <workItem from="1582542309421" duration="4848000" />
+      <workItem from="1582592517417" duration="5000" />
+      <workItem from="1582713456497" duration="3326000" />
+      <workItem from="1582717540590" duration="7795000" />
+      <workItem from="1582725538229" duration="3466000" />
+      <workItem from="1582729397941" duration="13228000" />
+      <workItem from="1582799161364" duration="18247000" />
+      <workItem from="1582821552481" duration="507000" />
+      <workItem from="1582824760337" duration="320000" />
+      <workItem from="1582886968400" duration="6172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="667" y="270" width="642" height="564" key="#docker-compose.yml.node-api:_Compose_Deployment" timestamp="1582719681010">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="667" y="270" width="642" height="564" key="#docker-compose.yml.node-api:_Compose_Deployment/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582719681010" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1582725311881">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582725311881" />
+    <state x="657" y="217" width="662" height="670" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582723008368">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="657" y="217" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582723008368" />
+    <state x="657" y="217" width="662" height="670" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582546827176" />
+    <state x="2129" y="384" width="670" height="676" key="search.everywhere.popup" timestamp="1582807978388">
+      <screen x="67" y="27" width="3773" height="1053" />
+    </state>
+    <state x="656" y="257" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582733007725" />
+    <state x="2129" y="384" width="670" height="676" key="search.everywhere.popup/67.27.3773.1053@67.27.3773.1053" timestamp="1582807978388" />
+  </component>
+</project>
