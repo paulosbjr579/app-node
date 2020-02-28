@@ -16,7 +16,37 @@ const controller = require('../controller/salesController')
  */
 router.get('/', controller.findAll);
 
-
+/**
+ * @swagger
+ *  definitions:
+ *  SalesCreate:
+ *       type: "object"
+ *       properties:
+ *          id_client:
+ *              type: "integer"
+ *          decription:
+ *              type: "string"
+ *
+ * /sales:
+ *   post:
+ *     tags:
+ *     - "Sales"
+ *     summary: "Create sales"
+ *     description: "This can only be done by the logged in Sales."
+ *     operationId: "createSales"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - in: "body"
+ *       name: "body"
+ *       description: "Created Sales object"
+ *       required: true
+ *       schema:
+ *         $ref: "#/definitions/SalesCreate"
+ *     responses:
+ *       default:
+ *         description: "successful operation"
+ */
 router.post('/', controller.createSales);
 router.get('/:id', controller.findbyid);
 router.put('/:id', controller.updata);
