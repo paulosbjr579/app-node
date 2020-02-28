@@ -11,7 +11,7 @@ services:
      - 8123:8123
     environment: 
       DATABASE_HOST: mysql-db-node 
-      .URL_API_PRODUCT: http://165.227.106.3:8100
+      URL_API_PRODUCT: http://165.227.106.3:8100
       URL_API_CLIENT: http://api-client:8080
       REDIS_URL: redis-auth:6379
       JWT_SECRET: LIHJoihOIJYUTGF45dasf4dsf7a65sadc564dg7
