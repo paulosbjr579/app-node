@@ -76,8 +76,39 @@ router.post('/', controller.createSales);
  */
 router.get('/:id', controller.findbyid);
 
-
+/**
+ * @swagger
+ *
+ * /sales/{Id}:
+ *   put:
+ *     tags:
+ *     - "Sales"
+ *     summary: "Updated Sales"
+ *     description: "This can only be done by the logged in Sales."
+ *     operationId: "updateSales"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - name: Id
+ *       in: "path"
+ *       description: "id that need to be updated"
+ *       required: true
+ *       type: "integer"
+ *     - in: "body"
+ *       name: "body"
+ *       description: "Updated Sales object"
+ *       required: true
+ *       schema:
+ *         $ref: "#/definitions/SalesCreate"
+ *     responses:
+ *       400:
+ *         description: "Invalid Sales supplied"
+ *       404:
+ *         description: "Sales not found"
+ */
 router.put('/:id', controller.updata);
+
+
 router.delete('/:id', controller.delete);
 router.get('/findIdClient/:id', controller.findIdClient);
 router.get('/findIdSales/:id', controller.findIdSales);
