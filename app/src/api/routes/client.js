@@ -51,6 +51,33 @@ router.get('/',middleware.verifyJWT, controller.findAll);
  *         description: "successful operation"
  */
 router.post('/',middleware.verifyJWT, controller.createClient);
+
+/**
+ * @swagger
+ *
+ * /client/{id}:
+ *   get:
+ *     tags:
+ *     - "Clients"
+ *     summary: "Get client by id"
+ *     description: ""
+ *     operationId: "getClientById"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - name: "id"
+ *       in: "path"
+ *       description: "The name that needs to be fetched. Use client for testing. "
+ *       required: true
+ *       type: "integer"
+ *     responses:
+ *       200:
+ *         description: "successful operation"
+ *       400:
+ *         description: "Invalid id supplied"
+ *       404:
+ *         description: "User not found"
+ */
 router.get('/:id',middleware.verifyJWT, controller.findbyid);
 router.put('/:id',middleware.verifyJWT, controller.updata);
 router.delete('/:id',middleware.verifyJWT, controller.delete);
