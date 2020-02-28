@@ -17,7 +17,39 @@ const middleware = require('../middleware/jwtMiddleware')
  */
 router.get('/',middleware.verifyJWT, controller.findAll);
 
-
+/**
+ * @swagger
+ *  definitions:
+ *  ClientCreate:
+ *       type: "object"
+ *       properties:
+ *          cpf:
+ *              type: "string"
+ *          datanasc:
+ *              type: "string"
+ *          name:
+ *              type: "string"
+ *
+ * /:
+ *   post:
+ *     tags:
+ *     - "Clients"
+ *     summary: "Create client"
+ *     description: "This can only be done by the logged in client."
+ *     operationId: "createClient"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - in: "body"
+ *       name: "body"
+ *       description: "Created client object"
+ *       required: true
+ *       schema:
+ *         $ref: "#/definitions/ClientCreate"
+ *     responses:
+ *       default:
+ *         description: "successful operation"
+ */
 router.post('/',middleware.verifyJWT, controller.createClient);
 router.get('/:id',middleware.verifyJWT, controller.findbyid);
 router.put('/:id',middleware.verifyJWT, controller.updata);
