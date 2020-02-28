@@ -79,7 +79,40 @@ router.post('/',middleware.verifyJWT, controller.createClient);
  *         description: "User not found"
  */
 router.get('/:id',middleware.verifyJWT, controller.findbyid);
+
+/**
+ * @swagger
+ *
+ * /client/{userId}:
+ *   put:
+ *     tags:
+ *     - "Clients"
+ *     summary: "Updated clients"
+ *     description: "This can only be done by the logged in clients."
+ *     operationId: "updateClients"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - name: userId
+ *       in: "path"
+ *       description: "id that need to be updated"
+ *       required: true
+ *       type: "integer"
+ *     - in: "body"
+ *       name: "body"
+ *       description: "Updated clients object"
+ *       required: true
+ *       schema:
+ *         $ref: "#/definitions/ClientCreate"
+ *     responses:
+ *       400:
+ *         description: "Invalid user supplied"
+ *       404:
+ *         description: "User not found"
+ */
 router.put('/:id',middleware.verifyJWT, controller.updata);
+
+
 router.delete('/:id',middleware.verifyJWT, controller.delete);
 router.get('/findName/:name',middleware.verifyJWT, controller.findbyname);
 router.delete('/all',middleware.verifyJWT, controller.deleteAll);
