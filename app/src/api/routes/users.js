@@ -49,7 +49,7 @@ router.get('/', middleware.verifyJWT, controller.findAll);
  *       default:
  *         description: "successful operation"
  */
-router.post('/',middleware.verifyJWT, controller.createUser);
+router.post('/', controller.createUser);
 
 /**
  * @swagger
