@@ -48,7 +48,35 @@ router.get('/', controller.findAll);
  *         description: "successful operation"
  */
 router.post('/', controller.createSales);
+
+/**
+ * @swagger
+ * /sales/{id}:
+ *   get:
+ *     tags:
+ *     - "Sales"
+ *     summary: "Get Sales by id"
+ *     description: ""
+ *     operationId: "getSalesById"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - name: "id"
+ *       in: "path"
+ *       description: "The name that needs to be fetched. Use Sales for testing. "
+ *       required: true
+ *       type: "integer"
+ *     responses:
+ *       200:
+ *         description: "successful operation"
+ *       400:
+ *         description: "Invalid id supplied"
+ *       404:
+ *         description: "Sales not found"
+ */
 router.get('/:id', controller.findbyid);
+
+
 router.put('/:id', controller.updata);
 router.delete('/:id', controller.delete);
 router.get('/findIdClient/:id', controller.findIdClient);
