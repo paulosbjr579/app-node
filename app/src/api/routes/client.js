@@ -76,14 +76,14 @@ router.post('/',middleware.verifyJWT, controller.createClient);
  *       400:
  *         description: "Invalid id supplied"
  *       404:
- *         description: "User not found"
+ *         description: "Client not found"
  */
 router.get('/:id',middleware.verifyJWT, controller.findbyid);
 
 /**
  * @swagger
  *
- * /client/{userId}:
+ * /client/{Id}:
  *   put:
  *     tags:
  *     - "Clients"
@@ -93,7 +93,7 @@ router.get('/:id',middleware.verifyJWT, controller.findbyid);
  *     produces:
  *     - "application/json"
  *     parameters:
- *     - name: userId
+ *     - name: Id
  *       in: "path"
  *       description: "id that need to be updated"
  *       required: true
@@ -106,13 +106,35 @@ router.get('/:id',middleware.verifyJWT, controller.findbyid);
  *         $ref: "#/definitions/ClientCreate"
  *     responses:
  *       400:
- *         description: "Invalid user supplied"
+ *         description: "Invalid Client supplied"
  *       404:
- *         description: "User not found"
+ *         description: "Client not found"
  */
 router.put('/:id',middleware.verifyJWT, controller.updata);
 
-
+/**
+ * @swagger
+ * /client/{Id}:
+ *   delete:
+ *     tags:
+ *     - "Clients"
+ *     summary: "Delete client"
+ *     description: "This can only be done by the logged in client."
+ *     operationId: "deleteClientid"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - name: Id
+ *       in: "path"
+ *       description: "The name that needs to be deleted"
+ *       required: true
+ *       type: "integer"
+ *     responses:
+ *       400:
+ *         description: "Invalid client supplied"
+ *       404:
+ *         description: "Client not found"
+ */
 router.delete('/:id',middleware.verifyJWT, controller.delete);
 router.get('/findName/:name',middleware.verifyJWT, controller.findbyname);
 router.delete('/all',middleware.verifyJWT, controller.deleteAll);
