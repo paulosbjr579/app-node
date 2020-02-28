@@ -12,7 +12,7 @@ services:
     environment: 
       DATABASE_HOST: mysql-db-node 
       URL_API_PRODUCT: http://192.168.15.37:8100
-      URL_API_CLIENT: http://192.168.15.36:8080
+      URL_API_CLIENT: http://api-client:8080
       REDIS_URL: redis-auth:6379
       JWT_SECRET: LIHJoihOIJYUTGF45dasf4dsf7a65sadc564dg7
     depends_on:
@@ -22,6 +22,8 @@ services:
     entrypoint: ["start.sh"]
     links:
       - redis-auth
+    networks:
+      - app-gateway
 
   mysql-db-node:
     container_name: mysql-db-node
@@ -34,12 +36,23 @@ services:
       - MYSQL_DATABASE=bhut
     volumes:
       - dbdata:/var/lib/mysql
+    networks:
+      - app-gateway
+
   redis-auth:
     image: redis:latest
     volumes:
       - redis_data:/data
     ports:
       - "63791:6379"
+    networks:
+      - app-gateway
+
 volumes:
   dbdata:
   redis_data:
+
+
+networks:
+  app-gateway:
+    external: true
