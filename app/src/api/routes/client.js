@@ -136,7 +136,36 @@ router.put('/:id',middleware.verifyJWT, controller.updata);
  *         description: "Client not found"
  */
 router.delete('/:id',middleware.verifyJWT, controller.delete);
+
+/**
+ * @swagger
+ *
+ * /client/findName/{name}:
+ *   get:
+ *     tags:
+ *     - "Clients"
+ *     summary: "Get user by Clients"
+ *     description: ""
+ *     operationId: "getClientsByName"
+ *     produces:
+ *     - "application/json"
+ *     parameters:
+ *     - name: "name"
+ *       in: "path"
+ *       description: "The name that needs to be fetched. Use Clients for testing. "
+ *       required: true
+ *       type: "string"
+ *     responses:
+ *       200:
+ *         description: "successful operation"
+ *       400:
+ *         description: "Invalid id supplied"
+ *       404:
+ *         description: "Clients not found"
+ */
 router.get('/findName/:name',middleware.verifyJWT, controller.findbyname);
+
+
 router.delete('/all',middleware.verifyJWT, controller.deleteAll);
 
 module.exports = router;
