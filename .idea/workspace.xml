@@ -8,11 +8,6 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -24,14 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23cfd7c9-ae40-4b44-a8cd-1e3bd6241dc9" name="Default Changelist" comment="" />
+    <list default="true" id="23cfd7c9-ae40-4b44-a8cd-1e3bd6241dc9" name="Default Changelist" comment="fix: removed files">
+      <change beforePath="$PROJECT_DIR$/.idea/api-js-java-php.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/app/src/api/routes" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Y7F5yW18ufLmZfXbakJhYPXpTl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,6 +52,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/api" />
+    </key>
   </component>
   <component name="RunManager" selected="Node.js.redis.js">
     <configuration name="redis.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app/src/api/config/redis.js" working-dir="$PROJECT_DIR$/app/src/api/config">
@@ -100,7 +106,31 @@
       <workItem from="1582821552481" duration="507000" />
       <workItem from="1582824760337" duration="320000" />
       <workItem from="1582886968400" duration="6172000" />
+      <workItem from="1582903333745" duration="348000" />
+      <workItem from="1582903689542" duration="1040000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: removed node_modules">
+      <created>1582903591310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582903591310</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: removed files">
+      <created>1582903611082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582903611082</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: added .gitignore">
+      <created>1582903737399</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582903737399</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,24 +148,40 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: removed node_modules" />
+    <MESSAGE value="fix: removed files" />
+    <MESSAGE value="fix: removed .idea" />
+    <MESSAGE value="feat: added .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: added .gitignore" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="667" y="270" width="642" height="564" key="#docker-compose.yml.node-api:_Compose_Deployment" timestamp="1582719681010">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="667" y="270" width="642" height="564" key="#docker-compose.yml.node-api:_Compose_Deployment/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582719681010" />
+    <state x="558" y="120" width="860" height="864" key="CommitChangelistDialog2" timestamp="1582906736911">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="558" y="120" width="860" height="864" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1582906736911" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1582725311881">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="482" y="187" key="SettingsEditor/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582725311881" />
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1582906783132">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="288" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1582906783132" />
     <state x="657" y="217" width="662" height="670" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582723008368">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="657" y="217" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582723008368" />
     <state x="657" y="217" width="662" height="670" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1582546827176" />
-    <state x="2129" y="384" width="670" height="676" key="search.everywhere.popup" timestamp="1582807978388">
-      <screen x="67" y="27" width="3773" height="1053" />
+    <state x="1080" y="384" width="672" height="676" key="search.everywhere.popup" timestamp="1582903629121">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="656" y="257" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1582733007725" />
+    <state x="1080" y="384" width="672" height="676" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1582903629121" />
     <state x="2129" y="384" width="670" height="676" key="search.everywhere.popup/67.27.3773.1053@67.27.3773.1053" timestamp="1582807978388" />
   </component>
 </project>
