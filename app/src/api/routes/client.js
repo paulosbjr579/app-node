@@ -165,7 +165,23 @@ router.delete('/:id',middleware.verifyJWT, controller.delete);
  */
 router.get('/findName/:name',middleware.verifyJWT, controller.findbyname);
 
-
+/**
+ * @swagger
+ * /client:
+ *   delete:
+ *     tags:
+ *     - "Clients"
+ *     summary: "Delete all Clients"
+ *     description: "This can only be done by the logged in Clients."
+ *     operationId: "deleteClients"
+ *     produces:
+ *     - "application/json"
+ *     responses:
+ *       400:
+ *         description: "Invalid username supplied"
+ *       404:
+ *         description: "Clients not found"
+ */
 router.delete('/all',middleware.verifyJWT, controller.deleteAll);
 
 module.exports = router;
