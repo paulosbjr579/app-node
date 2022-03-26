@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "keywords": [
     "erp",
@@ -25,14 +27,16 @@
     "path": "^0.12.7",
     "serve-favicon": "^2.3.2",
     "knex": "^0.20.9",
-    "axios":"^0.19.2",
-    "dotenv":"^8.2.0",
-    "cors":"^2.8.5",
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "cors": "^2.8.5",
     "redis": "^3.0.2",
     "swagger-jsdoc": "^3.5.0",
-    "swagger-ui-express": "^4.1.3"
+    "swagger-ui-express": "^4.1.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
-  }
+  },
+  "snyk": true
 }
